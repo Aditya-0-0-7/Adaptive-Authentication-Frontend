@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+#mainScreen
+{
+  width:100vw;
+  height:100vh;
+  background-color: #0a0d18;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.video
+{
+    mix-blend-mode: lighten;
+    width:100vw;
+    height:40vw;
+    position: fixed;
+    top:50%;
+    transform:translate(17%,-50%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#imageHolder
+{
+    width:100vw;
+    height: 40vw;
+    position: fixed;
+    right:0;
+    top:0;
+    background-image: url('https://hashedin.com/wp-content/uploads/2022/11/Boilerplate.png');
+    background-position: center;
+    background-size: 100vw 45vw;
+    top: 50%;  
+    transform: translate(0, -50%); 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#contentHolder
+{
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    left:0;
+    overflow-y:auto;
+    overflow-x: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+#contentSubHolder
+{
+    min-height: 100vh;
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#contentContainer
+{
+    height:fit-content;
+    width: 32%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+    padding-top: 8vmin;
+    padding-bottom: 8vmin;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+    margin-top: 10vmin;
+    margin-bottom: 10vmin;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+input
+{
+    padding:1vmin;
+    border-radius: 5px;
+    border: 0.7px solid grey;
+    width:95%;
+    height:2.5vmin;
+    font-size: 2vmin;
+    outline: none;
+}
+.ele1
+{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height: fit-content;
+    margin-top: 1.5vmin;
+    margin-bottom: 1.5vmin;
+}
+.ele1txt
+{
+    font-size: 2.5vmin;
+    font-weight: 500;
+    margin-bottom: 1vmin;
+}
+.loginSignUpbtn
+{
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+    width:80%;
+    padding: 1.5vmin;
+    border-radius: 5px;
+    border:none;
+    background-color: #1e4c90;
+    color: white;
+    cursor: pointer;
+    font-size: 2vmin;
 }
